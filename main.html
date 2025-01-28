@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="page1">
+            <nav class="navbar">
+                <div class="logo">MatchAlign</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+            </nav>
+            <div id="tagline">
+                <h1>Where preferences meet and perfect groups form.</h1>
+                <p>It Connecting classmates, aligning preferences, and building perfect teams.</p>
+            </div>
+            <div id="video">
+                <video autoplay loop muted >
+                    <source src="background.mp4" type="video/mp4" ,>
+                    Your browser does not support the video tag.
+                </video>
+
+            </div>
+           
+        </div>
+        <div id="page2">
+          
+            <div class="parag">
+                <h3>Our motive</h3>
+            <p>
+                MatchAlign is a dynamic platform designed to help students connect  <br> and collaborate effortlessly. <span><img src="pexels-daria-liudnaya-7354444.jpg" alt=""></span>By entering personal details and  <br> preferences, classmates can easily find and join  <span class="span1"><img src="pexels-ekaterina-bolovtsova-9130866.jpg" alt=""></span>groups  <br>that align with their interests, skills, and goals. <span class="span2" ><img src="pexels-guvo-30388002.jpg" alt=""></span>Whether  for <br>  academic projects creating the perfect environment for   collaboration <br> and success.  </p>
+           </div>
+        
+        </div>
+        <div class="page6">
+            <div class="form-container">
+                <div class="form-header">
+                    <h1>Interactive Preferences Form</h1>
+                </div>
+                 <!-- Name Section -->
+        <div class="name-section">
+            <label for="name">What is your name?</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+                <form>
+                    
+                    <!-- Question 1 -->
+                    <div class="question">
+                        <div class="question-header" onclick="toggleOptions(this)">
+                            <h2>1. What is your taste in movies?</h2>
+                            <span class="arrow">&#9654;</span>
+                        </div>
+                        <div class="options">
+                            <div class="option-card" onclick="selectOption(this)">Thriller</div>
+                            <div class="option-card" onclick="selectOption(this)">Fantasy</div>
+                            <div class="option-card" onclick="selectOption(this)">Action</div>
+                            <div class="option-card" onclick="selectOption(this)">Romance</div>
+                        </div>
+                    </div>
+        
+                    <!-- Question 2 -->
+                    <div class="question">
+                        <div class="question-header" onclick="toggleOptions(this)">
+                            <h2>2. What kind of music do you like?</h2>
+                            <span class="arrow">&#9654;</span>
+                        </div>
+                        <div class="options">
+                            <div class="option-card" onclick="selectOption(this)">Rock</div>
+                            <div class="option-card" onclick="selectOption(this)">K-pop</div>
+                            <div class="option-card" onclick="selectOption(this)">Hip-hop</div>
+                            <div class="option-card" onclick="selectOption(this)">Classical</div>
+                        </div>
+                    </div>
+        
+                    <!-- Question 3 -->
+                    <div class="question">
+                        <div class="question-header" onclick="toggleOptions(this)">
+                            <h2>3. From these options, select your favorite meme</h2>
+                            <span class="arrow">&#9654;</span>
+                        </div>
+                        <div class="options">
+                            <div class="option-card" onclick="selectOption(this)">Aye Hey Oye Hoye</div>
+                            <div class="option-card" onclick="selectOption(this)">Juice Pila Do Musambi Kaaa</div>
+                            <div class="option-card" onclick="selectOption(this)">7 Croreeeeeee</div>
+                            <div class="option-card" onclick="selectOption(this)">Sachin Kia Hai Sachin</div>
+                        </div>
+                    </div>
+                    <!-- question4 -->
+                    <div class="question">
+                        <div class="question-header" onclick="toggleOptions(this)">
+                            <h2>4.From these options, select your favourite dish</h2>
+                            <span class="arrow">&#9654;</span>
+                        </div>
+                        <div class="options">
+                            <div class="option-card" onclick="selectOption(this)">a: biryan</div>
+                            <div class="option-card" onclick="selectOption(this)">b: motton Karahi</div>
+                            <div class="option-card" onclick="selectOption(this)">c: rass malai </div>
+                            <div class="option-card" onclick="selectOption(this)">d: Alfredo pasta</div>
+                        </div>
+                    </div>
+                     <!-- question5 -->
+                     <div class="question">
+                        <div class="question-header" onclick="toggleOptions(this)">
+                            <h2>5.From these options, select your favourit colour</h2>
+                            <span class="arrow">&#9654;</span>
+                        </div>
+                        <div class="options">
+                            <div class="option-card" onclick="selectOption(this)">a: pink</div>
+                            <div class="option-card" onclick="selectOption(this)">b: blue</div>
+                            <div class="option-card" onclick="selectOption(this)">c: black </div>
+                            <div class="option-card" onclick="selectOption(this)">d4fr4r</div>
+                        </div>
+                    </div>
+        
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+            </div>
+        </div>
+        
+       
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
